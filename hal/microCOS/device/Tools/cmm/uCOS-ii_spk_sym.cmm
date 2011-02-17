@@ -1,0 +1,1 @@
+d.load.elf .\..\uCOS\Ex1_S3c2410a\bin\Ex1_ram.axf /nocode /noclear

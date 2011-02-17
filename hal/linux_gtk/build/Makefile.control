@@ -1,0 +1,127 @@
+CFLAGS=  -w -I../../../logic/header -I.. -I../../../resource -I../../../core/header -I../../../control/header
+
+OBJS=   obj/rexy_ctl_list.o \
+	obj/rexy_ctl_popup.o
+
+SRCS= 	../../../control/source/rexy_ctl_list.c \
+	../../../control/source/rexy_ctl_popup.c  
+
+all: ../lib/libcontrol.a
+
+../lib/libcontrol.a: $(OBJS)	
+	ar rcs ../lib/libcontrol.a $(OBJS)
+
+obj/%.o : ../../../control/source/%.c
+	gcc -c $(CFLAGS) -o $@ $<
+
+clean: 
+	rm obj/*
+	rm ../lib/libcontrol.a
+
+dep:
+	makedepend -fMakefile.project $(CFLAGS) $(SRCS)
+
+# DO NOT DELETE
+
+../../../control/control/rexy_ctl_list.o: ../../../control/header/rexy_ctl_list.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_error.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_mem.h
+../../../control/control/rexy_ctl_list.o: ../rexy_haltype.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_type.h
+../../../control/control/rexy_ctl_list.o: ../rexy_halinterface.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_msg.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_lock.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_aniobj.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_win.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_user.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_common.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_gdi.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_trace.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_resource.h
+../../../control/control/rexy_ctl_list.o: ../../../resource/rexy_fontdata.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_device.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_const.h
+../../../control/control/rexy_ctl_list.o: ../rexy_clib.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_winalloc.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_msgq.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_font.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_util.h
+../../../control/control/rexy_ctl_list.o: ../../../core/header/rexy_string.h
+../../../control/control/rexy_ctl_popup.o: ../../../control/header/rexy_ctl_popup.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_error.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_mem.h
+../../../control/control/rexy_ctl_popup.o: ../rexy_haltype.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_type.h
+../../../control/control/rexy_ctl_popup.o: ../rexy_halinterface.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_msg.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_lock.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_aniobj.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_win.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_user.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_common.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_gdi.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_trace.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_resource.h
+../../../control/control/rexy_ctl_popup.o: ../../../resource/rexy_fontdata.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_device.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_const.h
+../../../control/control/rexy_ctl_popup.o: ../rexy_clib.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_winalloc.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_msgq.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_font.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_util.h
+../../../control/control/rexy_ctl_popup.o: ../../../core/header/rexy_string.h
+../../../control/source/sample_list.o: ../../../control/header/sample_list.h
+../../../control/source/sample_list.o: ../../../core/header/rexy.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_error.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_mem.h
+../../../control/source/sample_list.o: ../rexy_haltype.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_type.h
+../../../control/source/sample_list.o: ../rexy_halinterface.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_msg.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_lock.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_aniobj.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_win.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_user.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_common.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_gdi.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_trace.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_resource.h
+../../../control/source/sample_list.o: ../../../resource/rexy_fontdata.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_device.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_const.h
+../../../control/source/sample_list.o: ../rexy_clib.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_winalloc.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_msgq.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_font.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_util.h
+../../../control/source/sample_list.o: ../../../core/header/rexy_string.h
+../../../control/source/sample_list.o: ../../../control/header/rexy_ctl_list.h
+../../../control/source/sample_pop.o: ../../../control/header/sample_pop.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_error.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_mem.h
+../../../control/source/sample_pop.o: ../rexy_haltype.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_type.h
+../../../control/source/sample_pop.o: ../rexy_halinterface.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_msg.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_lock.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_aniobj.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_win.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_user.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_common.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_gdi.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_trace.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_resource.h
+../../../control/source/sample_pop.o: ../../../resource/rexy_fontdata.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_device.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_const.h
+../../../control/source/sample_pop.o: ../rexy_clib.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_winalloc.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_msgq.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_font.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_util.h
+../../../control/source/sample_pop.o: ../../../core/header/rexy_string.h
+../../../control/source/sample_pop.o: ../../../control/header/rexy_ctl_popup.h

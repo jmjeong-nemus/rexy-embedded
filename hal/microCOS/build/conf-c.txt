@@ -1,0 +1,6 @@
+-g -c -O2 -g -li -apcs /noswst -DADS -apcs /noswst/interwork -D__APCS_INTERWORK -DF_REXY_ENV_PHONE
+-I..\inc -I..\..\source -I..\..\arm_ucos\common\inc -I..\..\arm_ucos\S3c2410a\inc
+-I..\..\..\..\rexy\include
+-I..\..\..\mgl\include
+-cpu ARM920T
+

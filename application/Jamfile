@@ -1,0 +1,20 @@
+SubDir TOP application ;
+
+SubDirHdrs $(TOP) core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) resource ;
+
+Library application : application.c ;
+
+SubInclude TOP application window_demo ;
+SubInclude TOP application tetris ;
+SubInclude TOP application biorhythm ;
+SubInclude TOP application title ;
+SubInclude TOP application mainmenu ;
+SubInclude TOP application control_demo source ;
+if $(HAL_TARGET) = "vc60" {
+	SubInclude TOP application db_demo source ;
+	SubInclude TOP application mgl ;
+	SubInclude TOP application browser source ;
+}

@@ -1,0 +1,4 @@
+#!/bin/sh
+mv $1 $1.bak
+iconv -f euc-kr -t utf-8 $1.bak > $1
+rm $1.bak

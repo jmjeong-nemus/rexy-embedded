@@ -1,0 +1,15 @@
+﻿Source Tree Info
+
+addin 		: RexyE 의 core 를 기반으로 확장되는 add-in 모듈들의 소스
+application 	: 어플리케이션 소스
+control 		: RexyE GUI control 소스
+core		: RexyE core 소스
+doc		: Documents
+hal		: Hardware abstraction layer
+lib		: RexyE 의 core 와 관련 없는 라이브러리 바이너리 위치. 소스나 프로젝트들이 존재해도 무방
+logic		: RexyE 의 logic 소스
+resource		: Resource 파일들
+
+* lib 내에 존재할 수 있는 프로젝트 파일 이외의 모든 프로젝트 파일 ( addin, application, control, core, logic, resource, emulator ) 
+  은 hal/해당 플랫폼/build 안에 존재하여야 합니다.
+ 

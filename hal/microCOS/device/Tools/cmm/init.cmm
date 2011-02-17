@@ -1,0 +1,10 @@
+ tronchip.set.dabort off
+ tronchip.set.reset off
+
+ sys.o enreset off
+ sys.o trst off
+ sys.cpu arm920t
+ sys.option.dacr on
+ sys.mode attach
+ 
+

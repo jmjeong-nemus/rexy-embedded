@@ -1,0 +1,165 @@
+;------------------------------------------------------------------------------;
+; CMM file for SAMSUNG S3C2410A Application Processor                          ;
+;                                                                              ;
+; Copyrighted by SAMSUNG Electronics                                           ;
+;                                                                              ;
+; Scripted by frank.chang (frank.chang@samsung.com)                            ;
+; for the following environment                                                ;
+;                                                                              ;
+; - PalmOS                                                                     ;
+; - S3C2410A                                                                   ;
+;                                                                              ;
+;------------------------------------------------------------------------------;
+
+
+ local &TIGGA_IMAGE &TIGGA_SRCS &TIGGA_TOP
+;------------------------------------------------------------------------------;
+; ENVIRONMENT VARIABLE                                                         ;
+;                                                                              ;
+; [ Edit TIGGA_TOP and TIGGA_IMAGE_NAME to suit your development environment ] ;
+;                                                                              ;
+;  - TIGGA_TOP variable means the top directory that contains the folders named;
+;    APPS, BSPS, CONFIGS, DRIVERS, INCLUDE, LIB etc...                         ;
+;                                                                              ;
+;  - Make TIGGA_IMAGE_NAME have the name of final image which is built by the  ;
+;    TIGGA project.                                                            ;
+;                                                                              ;
+;------------------------------------------------------------------------------;
+ &TIGGA_TOP="D:\Mywork\Tigga\Yosemite\SPK540_SMDK"
+ &TIGGA_IMAGE_NAME="Sam_S3C2410_Full_enUS_ADS_THUMB_160x220_Debug.widebin"
+ 
+;------------------------------------------------------------------------------;
+; Other ENVIRONMENT VARIABLEs                                                  ;
+;------------------------------------------------------------------------------;
+ &TIGGA_SRCS="&TIGGA_TOP"+"\DAL\ARM\Hardware\Sam_S3C2410"
+ &TIGGA_IMAGE="&TIGGA_TOP"+"\build\ROM"
+
+;------------------------------------------------------------------------------;
+; Initialize target board                                                      ;
+; cf. DACR = Domain Access Control Registers                                   ;
+;------------------------------------------------------------------------------;
+ print "Reset System"
+ SYStem.Down
+ sYmbol.RESet
+ sys.reset
+ MMU.RESet
+ RESet
+
+ print "Configuring TIGGA"
+ SYStem.CPU arm920T
+; SYStem.JtagClock RTCK
+
+ SYStem.Option EnReset OFF
+; SYStem.Option waitreset ON
+ SYStem.Option ResBreak OFF
+;SYStem.Option mmu off
+ SYStem.Option dacr on
+
+ print "system going up"
+ SYStem.Up
+
+ print "2nd phase initialization"
+ Register.Set cpsr (r(cpsr)&0xffffff00)|0xd3
+
+ Data.Set SD:0x53000000 %LE %LONG 0x0		;disable watchdog
+ Data.Set SD:0x4c000004 %LE %LONG 0x70042	;set clkdiv
+ Data.Set SD:0x4c000008 %LE %LONG 0x58042
+
+;SDRAM Initialization
+
+ Data.Set SD:0x48000000 %LE %LONG 0x22111122
+ Data.Set SD:0x48000004 %LE %LONG 0x00000700
+ Data.Set SD:0x48000008 %LE %LONG 0x00000700
+ Data.Set SD:0x4800000c %LE %LONG 0x00000700
+ Data.Set SD:0x48000010 %LE %LONG 0x00000700
+ Data.Set SD:0x48000014 %LE %LONG 0x00000700
+ Data.Set SD:0x48000018 %LE %LONG 0x00000700
+ Data.Set SD:0x4800001c %LE %LONG 0x00018005
+ Data.Set SD:0x48000020 %LE %LONG 0x00018005     
+ Data.Set SD:0x48000024 %LE %LONG 0x008C0459
+ Data.Set SD:0x48000028 %LE %LONG 0xB2
+ Data.Set SD:0x4800002c %LE %LONG 0x30
+ Data.Set SD:0x48000030 %LE %LONG 0x30    
+
+ print "Initialization done..."
+
+;------------------------------------------------------------------------------;
+; Let the BootLoader in the target board run                                   ;
+;------------------------------------------------------------------------------;
+; print "running bootloader"
+; go
+; wait 3.s
+; break
+ 
+;------------------------------------------------------------------------------;
+; Load IMAGE                                                                   ;
+;------------------------------------------------------------------------------;
+ print "loading..."
+ sys.o turbo on
+ Data.LOAD.binary  &TIGGA_IMAGE\&TIGGA_IMAGE_NAME 0x30000000
+ sys.o turbo off
+ print "ending..."
+
+;------------------------------------------------------------------------------;
+; Set Source Search Path                                                       ;
+;------------------------------------------------------------------------------;
+ sYmbol.spath + &TIGGA_SRCS\src
+ sYmbol.spath + &TIGGA_SRCS\srcboot
+
+
+;------------------------------------------------------------------------------;
+; Set Startup Condition                                                        ;
+;------------------------------------------------------------------------------;
+ mmu.cid 0:0 4000
+ Register.Set pc 0x30000000
+
+;------------------------------------------------------------------------------;
+; Configure OS awareness functionality                                         ;
+;------------------------------------------------------------------------------;
+
+ print "done."
+ enddo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

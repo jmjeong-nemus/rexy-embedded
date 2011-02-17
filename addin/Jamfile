@@ -1,0 +1,7 @@
+SubDir TOP addin ;
+
+if $(HAL_TARGET) = "vc60" {
+	SubInclude TOP addin rexyDB ;
+	SubInclude TOP addin unicode ;
+	SubInclude TOP addin hangle ;
+}

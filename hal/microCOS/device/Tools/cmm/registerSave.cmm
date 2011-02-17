@@ -1,0 +1,7 @@
+AREA.CREATE regSave
+AREA.SELECT regSave
+AREA.OPEN regSave regSave.txt
+AREA regSave
+REGISTER.LOG ALL /AREA regSave
+AREA.CLOSE regSave
+ENDDO

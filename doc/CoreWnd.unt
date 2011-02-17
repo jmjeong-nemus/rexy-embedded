@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPD:UNIT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLPackage" guid="dE075UJpR0eG2WdmyH8R/AAA">
+<XPD:ATTR name="Name" type="string">Window</XPD:ATTR>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="eiEJ9j0XrkebBSDi58XXWQAA">
+<XPD:ATTR name="Name" type="string">CoreWnd</XPD:ATTR>
+<XPD:REF name="DiagramOwner">dE075UJpR0eG2WdmyH8R/AAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="XbmKogkCWkuW5JukVLQe7AAA">
+<XPD:REF name="Diagram">eiEJ9j0XrkebBSDi58XXWQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedElements" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="GWeJWC8Tz0W54jqNQl5IRAAA">
+<XPD:ATTR name="Name" type="string">rexy_winalloc</XPD:ATTR>
+<XPD:REF name="Namespace">dE075UJpR0eG2WdmyH8R/AAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">NEjFz5p4jkK9yiukRwKd1QAA</XPD:REF>
+<XPD:REF name="Views[1]">g35bi2LzN0uBXxYxMHF7WAAA</XPD:REF>
+<XPD:REF name="Views[2]">yIX9jwlQ5UWnhu68D34+sAAA</XPD:REF>
+<XPD:REF name="Views[3]">hQPNJLwyaE+VHX0U0IYdiwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="zDpYNLp4XEKkmMJQly6glwAA">
+<XPD:ATTR name="Name" type="string">rexy_win</XPD:ATTR>
+<XPD:REF name="Namespace">dE075UJpR0eG2WdmyH8R/AAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">NwkDPSORb0y1pqw/bs1aXgAA</XPD:REF>
+<XPD:REF name="Views[1]">dXYczGugl0OYDaEl/Usg6gAA</XPD:REF>
+<XPD:REF name="Views[2]">KjhE1BK10UunrDiCXIbhwgAA</XPD:REF>
+<XPD:REF name="Views[3]">Fo3JSuYhT0GjtCJemgPnjgAA</XPD:REF>
+<XPD:ATTR name="#Operations" type="integer">23</XPD:ATTR>
+<XPD:OBJ name="Operations[0]" type="UMLOperation" guid="3lOFmz0opkeYPZVQYvsIfAAA">
+<XPD:ATTR name="Name" type="string">WinCreateWindowEx</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">8</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="4sTUnkON7k+AgJ5ETl+2pQAA">
+<XPD:ATTR name="Name" type="string">wndproc</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WINPROC</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="I8Xaupjy8k2VTbOIyDimIgAA">
+<XPD:ATTR name="Name" type="string">x</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="goh/Qw4e6E2eu7hGe+k2ggAA">
+<XPD:ATTR name="Name" type="string">y</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[3]" type="UMLParameter" guid="8y7pBI0w1EOX3NYfpvwKHAAA">
+<XPD:ATTR name="Name" type="string">w_width</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[4]" type="UMLParameter" guid="4BBuzwxUd0ybBYW7FDCdlwAA">
+<XPD:ATTR name="Name" type="string">w_height</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[5]" type="UMLParameter" guid="VCKcERUs206SWL9sAt8qggAA">
+<XPD:ATTR name="Name" type="string">mem</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[6]" type="UMLParameter" guid="BLJsbdTPCkCPsMFlXR6WEAAA">
+<XPD:ATTR name="Name" type="string">wparam</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[7]" type="UMLParameter" guid="aoA+IINh9ESlw/DnwhyOfQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">3lOFmz0opkeYPZVQYvsIfAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[1]" type="UMLOperation" guid="urYxwdtD4k2Dbjl5MXNkCwAA">
+<XPD:ATTR name="Name" type="string">WinInvalidateWindow</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="WgOHtFK6HEa2+2Wm2i3tbAAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">urYxwdtD4k2Dbjl5MXNkCwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="uwz3/jSCg0iDMFH+T5cfnQAA">
+<XPD:ATTR name="Name" type="string">erase</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">urYxwdtD4k2Dbjl5MXNkCwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="cBsH7x+B6kqZ57fsd0HF/gAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">urYxwdtD4k2Dbjl5MXNkCwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[2]" type="UMLOperation" guid="PswqDOW5iUSTXEAu0LQ8xAAA">
+<XPD:ATTR name="Name" type="string">WinUpdateWindow</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="rs9752f6tEqeNBb0UgJhSAAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">PswqDOW5iUSTXEAu0LQ8xAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="LiH9Hvqk3EKRWkfVFmFhuQAA">
+<XPD:ATTR name="Name" type="string">status</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">PswqDOW5iUSTXEAu0LQ8xAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="+NLd4scX7ESxZDA910fZzAAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">PswqDOW5iUSTXEAu0LQ8xAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[3]" type="UMLOperation" guid="iDraR4ZsfkygML545ISCvgAA">
+<XPD:ATTR name="Name" type="string">WinShowWindow</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="qwMBfY0vpUG8ZF2pPhVM+gAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">iDraR4ZsfkygML545ISCvgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="VGpuxsWpoE2ZD6vDhSEbQAAA">
+<XPD:ATTR name="Name" type="string">status</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">iDraR4ZsfkygML545ISCvgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="jJMvhmkAFU2ch/WIbP//KwAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">iDraR4ZsfkygML545ISCvgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[4]" type="UMLOperation" guid="jIaenXoItkSpB14i5S8XDQAA">
+<XPD:ATTR name="Name" type="string">WinUpdateAllWindow</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="zL7eWz759UWnwRWBvFdlFwAA">
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">jIaenXoItkSpB14i5S8XDQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="bbn0Ml9ykEil3D19t/hfmgAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">jIaenXoItkSpB14i5S8XDQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[5]" type="UMLOperation" guid="eHVfXnC1CkGBHxv5n912DwAA">
+<XPD:ATTR name="Name" type="string">WinDestroyWindow</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="R365hJEpdUKbHk+k9qnbOwAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">eHVfXnC1CkGBHxv5n912DwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="67cRKKJ2jkKV/1ZS6gO9LQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">eHVfXnC1CkGBHxv5n912DwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[6]" type="UMLOperation" guid="u2rLRJhPH0qei17zRR+x5QAA">
+<XPD:ATTR name="Name" type="string">WinSetWindowPos</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">7</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="KMUvwanAJUi6xa8MTya0jgAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="FNj2bqfCHkCCfEf+X46f9gAA">
+<XPD:ATTR name="Name" type="string">x</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="//4jyCGGqE+ODOnUdQdLTwAA">
+<XPD:ATTR name="Name" type="string">y</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[3]" type="UMLParameter" guid="7yUlSjCrCUqPEDjZyh4+oQAA">
+<XPD:ATTR name="Name" type="string">width</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[4]" type="UMLParameter" guid="tQvT1dG7b0WWelzWQGPxWgAA">
+<XPD:ATTR name="Name" type="string">height</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[5]" type="UMLParameter" guid="jnQ+3F5H3EqJDFw+GZVEcQAA">
+<XPD:ATTR name="Name" type="string">flag</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[6]" type="UMLParameter" guid="WLcYV0Hp9EeCaZl9g8A7OQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u2rLRJhPH0qei17zRR+x5QAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[7]" type="UMLOperation" guid="WG5urUdIgEOLCc/xGWyf9wAA">
+<XPD:ATTR name="Name" type="string">WinGetSelection</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="uAMc/0oIX0CclMmsnf6BIAAA">
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">WG5urUdIgEOLCc/xGWyf9wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="TpuJnbKg8EeluspM9PlqjAAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">WG5urUdIgEOLCc/xGWyf9wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[8]" type="UMLOperation" guid="gpumbF0xW0amYoWsRdsf9gAA">
+<XPD:ATTR name="Name" type="string">WinGetFirstControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="y53olCcMK06uVmsZ3RGJrQAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">gpumbF0xW0amYoWsRdsf9gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="3YUXSgxl2EmuGh9j6uPkuwAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">gpumbF0xW0amYoWsRdsf9gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="6EzkpWiE4Eu9/sBECCwPDQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">gpumbF0xW0amYoWsRdsf9gAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[9]" type="UMLOperation" guid="wwya1U0NhkmIT3esGt4aHwAA">
+<XPD:ATTR name="Name" type="string">WinGetLastControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="KE6dZX2WpEGrCjDpq187gwAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">wwya1U0NhkmIT3esGt4aHwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="d2jZQmA1m0WByWisG8xE2QAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">wwya1U0NhkmIT3esGt4aHwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="aePSxHBkZUa2dDYMPcwcpAAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">wwya1U0NhkmIT3esGt4aHwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[10]" type="UMLOperation" guid="vOhFT/mAS0Os10HRrhdCOgAA">
+<XPD:ATTR name="Name" type="string">WinAddControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">8</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="R/YZ+IHYMUaJdR/7N95WVwAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="KZWfWCY6fU+jE/GCXwfEkgAA">
+<XPD:ATTR name="Name" type="string">type</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="nm4nkWQrj02lzUJg2LwuxQAA">
+<XPD:ATTR name="Name" type="string">id</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[3]" type="UMLParameter" guid="s4bSAlBACUOcSRN+W1OkzwAA">
+<XPD:ATTR name="Name" type="string">style</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[4]" type="UMLParameter" guid="ubXRH9LYI0WwsRdDcnfkmgAA">
+<XPD:ATTR name="Name" type="string">text</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">char</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+<XPD:ATTR name="#TaggedValues" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="TaggedValues[0]" type="TaggedValue" guid="CgU81ltgcUikfNIbgKg0fgAA">
+<XPD:ATTR name="ProfileName" type="string">Cpp</XPD:ATTR>
+<XPD:ATTR name="TagDefinitionSetName" type="string">CppPointer</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">CppPointer</XPD:ATTR>
+<XPD:ATTR name="DataValue" type="string">*</XPD:ATTR>
+<XPD:REF name="TaggedModel">ubXRH9LYI0WwsRdDcnfkmgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[5]" type="UMLParameter" guid="hSpN5GsJK0G1vUC5jVcaIAAA">
+<XPD:ATTR name="Name" type="string">location</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">rect</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+<XPD:ATTR name="#TaggedValues" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="TaggedValues[0]" type="TaggedValue" guid="X3opwJbGWkqirVGZ7vWB2wAA">
+<XPD:ATTR name="ProfileName" type="string">Cpp</XPD:ATTR>
+<XPD:ATTR name="TagDefinitionSetName" type="string">CppPointer</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">CppPointer</XPD:ATTR>
+<XPD:ATTR name="DataValue" type="string">*</XPD:ATTR>
+<XPD:REF name="TaggedModel">hSpN5GsJK0G1vUC5jVcaIAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[6]" type="UMLParameter" guid="bqpZst68CEyiuWAgA3VFxgAA">
+<XPD:ATTR name="Name" type="string">wndproc</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WINPROC</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[7]" type="UMLParameter" guid="au1/mjVSnU2jxMd1LGK71gAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">vOhFT/mAS0Os10HRrhdCOgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[11]" type="UMLOperation" guid="G00XFpQMmUumaPwH/GuoYgAA">
+<XPD:ATTR name="Name" type="string">WinSetSelection</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="xJK9iv3g5Ey143RY96KyXgAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">G00XFpQMmUumaPwH/GuoYgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="+RnljSHZtUiV5DIbQvw3aAAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">G00XFpQMmUumaPwH/GuoYgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[12]" type="UMLOperation" guid="L+VIGxBpWEyJMrjPF7ThqAAA">
+<XPD:ATTR name="Name" type="string">WinGetNextControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">4</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="2G6m9DaAsUuxmzTBXgAh1gAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">L+VIGxBpWEyJMrjPF7ThqAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="ZXRMbEaeLES7fAqQxmr8eAAA">
+<XPD:ATTR name="Name" type="string">control</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">L+VIGxBpWEyJMrjPF7ThqAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="EnVvUxAWt0GSn1M1t3HMKAAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">L+VIGxBpWEyJMrjPF7ThqAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[3]" type="UMLParameter" guid="SyYD1KcgFk2G+1q1kWbkPQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">L+VIGxBpWEyJMrjPF7ThqAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[13]" type="UMLOperation" guid="DJuiDPfBB0aB76RDhuctRAAA">
+<XPD:ATTR name="Name" type="string">WinGetPrevControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">4</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="NZpX+Pq+o0eERgvzk/8mdgAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">DJuiDPfBB0aB76RDhuctRAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="qaw7Fl86Sk+rv/YczvmQ0AAA">
+<XPD:ATTR name="Name" type="string">control</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">DJuiDPfBB0aB76RDhuctRAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="lJLXF3/NNUuBJ0+KeOQwfQAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">DJuiDPfBB0aB76RDhuctRAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[3]" type="UMLParameter" guid="8g2viNfORUasUjhQFi+lRQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">DJuiDPfBB0aB76RDhuctRAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[14]" type="UMLOperation" guid="NnBJZQiYy0CfEXcQml94PAAA">
+<XPD:ATTR name="Name" type="string">WinGetFirstControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="iUrDizO1RUWdsrJhFZXX+wAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">NnBJZQiYy0CfEXcQml94PAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="Tx5OIEdb7UmiSXvA3OfJkAAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">NnBJZQiYy0CfEXcQml94PAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="zB/mbvlQbU+N9+EzLWQckgAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">NnBJZQiYy0CfEXcQml94PAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[15]" type="UMLOperation" guid="u19+vSoT50GZEHJWnvfJcwAA">
+<XPD:ATTR name="Name" type="string">WinGetLastControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="0/chguto/EGKdL+5yhBwQgAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u19+vSoT50GZEHJWnvfJcwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="l4dKkE/4o0SDoaH7EtuW6QAA">
+<XPD:ATTR name="Name" type="string">bTabStop</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u19+vSoT50GZEHJWnvfJcwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="8lxAx3YYrE+87uUMZX5/JAAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">u19+vSoT50GZEHJWnvfJcwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[16]" type="UMLOperation" guid="urve4+UvakmeebxD2+cGrgAA">
+<XPD:ATTR name="Name" type="string">WinGetSelectionControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="OOs7QApzNEO0VZFValjn5wAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">urve4+UvakmeebxD2+cGrgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="2KE8qwhlZkiykFuLd3dR5wAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">urve4+UvakmeebxD2+cGrgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[17]" type="UMLOperation" guid="+Q92xtJ/hkOquEvcOD4VDQAA">
+<XPD:ATTR name="Name" type="string">WinGetHiliteControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="roff74UBkkCP+svrlrxiDQAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">+Q92xtJ/hkOquEvcOD4VDQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="wmCWkaNtrEWZrbAjgrrF+QAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">+Q92xtJ/hkOquEvcOD4VDQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[18]" type="UMLOperation" guid="T6R7T7RSokGyreCILFDM5AAA">
+<XPD:ATTR name="Name" type="string">WinSetHiliteControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="wYB3xxJNo0Wp8wcwnkWMQAAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">T6R7T7RSokGyreCILFDM5AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="fuBjErFhjkCVM7+vLv2btgAA">
+<XPD:ATTR name="Name" type="string">control</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">T6R7T7RSokGyreCILFDM5AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="ju48vPS29USYTLt/GVABzQAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">T6R7T7RSokGyreCILFDM5AAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[19]" type="UMLOperation" guid="0jyqx+YEJEehIemRy8CLOAAA">
+<XPD:ATTR name="Name" type="string">WinDestroyControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="j0YbNJrAyU6Kws23RMmlmwAA">
+<XPD:ATTR name="Name" type="string">control</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">0jyqx+YEJEehIemRy8CLOAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="0HTUv9eFoE6MiCWryN344gAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">0jyqx+YEJEehIemRy8CLOAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[20]" type="UMLOperation" guid="Z1PjbQ57q0OzJbJyXtdbKQAA">
+<XPD:ATTR name="Name" type="string">WinDestroyAllControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="Gt/LwVoCOkWlTJ/RCOaK8gAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">Z1PjbQ57q0OzJbJyXtdbKQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="7rpZLQSQGUyO1hUkTaS8vgAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">Z1PjbQ57q0OzJbJyXtdbKQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[21]" type="UMLOperation" guid="OjB3dwElTkaKdxmPhJfO1AAA">
+<XPD:ATTR name="Name" type="string">WinUpdateControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="loFz8WsKj0GP09PmcTMZDAAA">
+<XPD:ATTR name="Name" type="string">control</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">OjB3dwElTkaKdxmPhJfO1AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="8Vh4YOhwsUqj+Sf2km19kwAA">
+<XPD:ATTR name="Name" type="string">erase</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">OjB3dwElTkaKdxmPhJfO1AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="psOU0+bYuUuPEujX4g98pgAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">OjB3dwElTkaKdxmPhJfO1AAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Operations[22]" type="UMLOperation" guid="Y+Z9d370CUWCAi/V4QPSGwAA">
+<XPD:ATTR name="Name" type="string">WinUpdateAllControl</XPD:ATTR>
+<XPD:REF name="Owner">zDpYNLp4XEKkmMJQly6glwAA</XPD:REF>
+<XPD:ATTR name="#Parameters" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="srdZqKQf4E+mSypAji7e6gAA">
+<XPD:ATTR name="Name" type="string">panel</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">WND</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">Y+Z9d370CUWCAi/V4QPSGwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="aKc4Afe7MkiFN2M/1uGwUQAA">
+<XPD:ATTR name="Name" type="string">erase</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">Y+Z9d370CUWCAi/V4QPSGwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Parameters[2]" type="UMLParameter" guid="DYeEOZ+RAUSHftQ+wktpngAA">
+<XPD:ATTR name="Name" type="string">return</XPD:ATTR>
+<XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">void</XPD:ATTR>
+<XPD:REF name="BehavioralFeature">Y+Z9d370CUWCAi/V4QPSGwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:UNIT>

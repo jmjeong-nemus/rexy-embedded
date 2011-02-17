@@ -1,0 +1,288 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir="."
+	BuildSystem="automakefile"
+	BuildMakeFile="slickmake">
+	<Config
+		Name="Debug"
+		Type="gnuc"
+		DebugCallbackName="gdb"
+		Version="1"
+		OutputFile="%bdRexyE_SE"
+		CompilerConfigName="Latest Version"
+		Defines="">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				Dialog="_gnuc_options_form Compile"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				OutputExts="*.o"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec CmdLine='gcc -c %xup %defd -g -o "%bd%n%oe" %i "%f"'/>
+			</Target>
+			<Target
+				Name="Link"
+				MenuCaption="&amp;Link"
+				ShowOnMenu="Never"
+				Dialog="_gnuc_options_form Link"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec CmdLine='gcc %xup -g -o "%o" %objs'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec CmdLine="make"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec CmdLine='make -f "slickmake" rebuild CFG=%b'/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				Dialog="_gnuc_options_form Run/Debug"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec
+					CmdLine='vsdebugio -prog "%o" %~other'
+					OtherOptions="../rexye"/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				Dialog="_gnuc_options_form Run/Debug"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec
+					CmdLine='"%o" %~other'
+					OtherOptions="../rexye"/>
+			</Target>
+			<Target
+				Name="dash"
+				MenuCaption="-"
+				Deletable="0">
+				<Exec/>
+			</Target>
+			<Target
+				Name="GNU C Options"
+				MenuCaption="GNU C &amp;Options..."
+				ShowOnMenu="HideIfNoCmdLine"
+				Deletable="0"
+				SaveOption="SaveNone">
+				<Exec
+					CmdLine="gnucoptions"
+					Type="Slick-C"/>
+			</Target>
+		</Menu>
+		<Includes>
+			<Include Dir="/shared/Development/RexyE/trunk/core/header/"/>
+		</Includes>
+		<Libs PreObjects="0"/>
+	</Config>
+	<Config
+		Name="Release"
+		Type="gnuc"
+		DebugCallbackName="gdb"
+		Version="1"
+		OutputFile="%bdRexyE_SE"
+		CompilerConfigName="Latest Version"
+		Defines="">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				Dialog="_gnuc_options_form Compile"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				OutputExts="*.o"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec CmdLine='gcc -c %xup %defd -o "%bd%n%oe" %i "%f"'/>
+			</Target>
+			<Target
+				Name="Link"
+				MenuCaption="&amp;Link"
+				ShowOnMenu="Never"
+				Dialog="_gnuc_options_form Link"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec CmdLine='gcc %xup -o "%o" %objs'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec CmdLine="make"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec CmdLine='make -f "slickmake" rebuild CFG=%b'/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				Dialog="_gnuc_options_form Run/Debug"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec
+					CmdLine='vsdebugio -prog "%o" %~other'
+					OtherOptions="../rexye"/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				Dialog="_gnuc_options_form Run/Debug"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="../">
+				<Exec
+					CmdLine='"%o" %~other'
+					OtherOptions="../rexye"/>
+			</Target>
+			<Target
+				Name="dash"
+				MenuCaption="-"
+				Deletable="0">
+				<Exec/>
+			</Target>
+			<Target
+				Name="GNU C Options"
+				MenuCaption="GNU C &amp;Options..."
+				ShowOnMenu="HideIfNoCmdLine"
+				Deletable="0"
+				SaveOption="SaveNone">
+				<Exec
+					CmdLine="gnucoptions"
+					Type="Slick-C"/>
+			</Target>
+		</Menu>
+		<Includes>
+			<Include Dir="/shared/Development/RexyE/trunk/core/header/"/>
+		</Includes>
+		<Libs PreObjects="0"/>
+	</Config>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl">
+			<F N="../../../../core/source/rexy_aniobj.c"/>
+			<F N="../../../../logic/source/rexy_ctl_core.c"/>
+			<F N="../../../../core/source/rexy_font.c"/>
+			<F N="../../../../core/source/rexy_gdi.c"/>
+			<F N="../../../../core/source/rexy_lock.c"/>
+			<F N="../../../../logic/source/rexy_main.c"/>
+			<F N="../../../../logic/source/rexy_mainproc.c"/>
+			<F N="../../../../core/source/rexy_mem.c"/>
+			<F N="../../../../core/source/rexy_msg.c"/>
+			<F N="../../../../core/source/rexy_msgq.c"/>
+			<F N="../../../../logic/source/rexy_pict.c"/>
+			<F N="../../../../core/source/rexy_resource.c"/>
+			<F N="../../../../logic/source/rexy_state.c"/>
+			<F N="../../../../core/source/rexy_string.c"/>
+			<F N="../../../../logic/source/rexy_sysmsg.c"/>
+			<F N="../../../../core/source/rexy_trace.c"/>
+			<F N="../../../../core/source/rexy_user.c"/>
+			<F N="../../../../core/source/rexy_util.c"/>
+			<F N="../../../../core/source/rexy_win.c"/>
+			<F N="../../../../core/source/rexy_winalloc.c"/>
+			<F N="../test.c"/>
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if">
+			<F N="../../../../logic/header/application.h"/>
+			<F N="../../../../logic/header/phone_sys_app.h"/>
+			<F N="../../../../core/header/rexy.h"/>
+			<F N="../../../../core/header/rexy_aniobj.h"/>
+			<F N="../../rexy_clib.h"/>
+			<F N="../../../../core/header/rexy_common.h"/>
+			<F N="../../../../core/header/rexy_const.h"/>
+			<F N="../../../../logic/header/rexy_ctl_core.h"/>
+			<F N="../../../../core/header/rexy_device.h"/>
+			<F N="../../../../core/header/rexy_error.h"/>
+			<F N="../../../../logic/header/rexy_feature.h"/>
+			<F N="../../../../core/header/rexy_font.h"/>
+			<F N="../../../../core/header/rexy_gdi.h"/>
+			<F N="../../rexy_halinterface.h"/>
+			<F N="../../rexy_haltype.h"/>
+			<F N="../../../../logic/header/rexy_idletimer.h"/>
+			<F N="../../../../core/header/rexy_lock.h"/>
+			<F N="../../../../logic/header/rexy_main.h"/>
+			<F N="../../../../logic/header/rexy_mainproc.h"/>
+			<F N="../../../../logic/header/rexy_mbcs.h"/>
+			<F N="../../../../core/header/rexy_mem.h"/>
+			<F N="../../../../core/header/rexy_msg.h"/>
+			<F N="../../../../core/header/rexy_msgq.h"/>
+			<F N="../../../../logic/header/rexy_pict.h"/>
+			<F N="../../../../core/header/rexy_popup.h"/>
+			<F N="../../rexy_resource.h"/>
+			<F N="../../../../core/header/rexy_resource.h"/>
+			<F N="../../../../logic/header/rexy_state.h"/>
+			<F N="../../../../core/header/rexy_string.h"/>
+			<F N="../../../../logic/header/rexy_sysmsg.h"/>
+			<F N="../../../../core/header/rexy_trace.h"/>
+			<F N="../../../../core/header/rexy_type.h"/>
+			<F N="../../../../core/header/rexy_user.h"/>
+			<F N="../../../../core/header/rexy_util.h"/>
+			<F N="../../../../core/header/rexy_win.h"/>
+			<F N="../../../../core/header/rexy_winalloc.h"/>
+		</Folder>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+			<F N="../../../../core/source/conv"/>
+			<F
+				N="../Makefile"
+				Type="Makefile"/>
+			<F N="../Makefile.core"/>
+			<F N="../Makefile.logic"/>
+			<F N="../Makefile.project"/>
+			<F N="../../../../core/source/rexy_aniobj.c~"/>
+			<F N="slickmake"/>
+		</Folder>
+	</Files>
+</Project>

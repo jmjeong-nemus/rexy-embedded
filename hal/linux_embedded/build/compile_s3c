@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#DEBUG_OPTION="-g -DS3C6400"
+DEBUG_OPTION="-DS3C6400"
+
+CC="/usr/local/arm/4.0.3/bin/arm-linux-gcc"
+LFLAGS="$(DEBUG_OPTION) -L../lib -L../../../lib/mgl/s3c6400"
+
+export CC
+export DEBUG_OPTION
+export LFLAGS
+
+make
+
+

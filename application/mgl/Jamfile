@@ -1,0 +1,12 @@
+SubDir TOP application mgl ;
+
+SubDirHdrs core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) lib mgl header ;
+SubDirHdrs $(TOP) application ;
+SubDirHdrs $(TOP) resource ;
+
+Library application : app_menu1.c app_menu2.c app_menu3.c app_menu4.c app_menu5.c app_mgl_idle.c ;
+
+SubInclude TOP application mgl layer ;

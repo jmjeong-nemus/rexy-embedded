@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pngtest - Win32 LIB ASM Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP22C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /ZI /Od /I "..\..\..\zlib" /D "WIN32" /D "_DEBUG" /Fo"Win32_LIB_ASM_Debug/" /Fd"Win32_LIB_ASM_Debug/" /FD /GZ /c 
+"D:\RexyEforApp\branches\20060410-wichang-browser\application\lpng129\pngtest.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP22C.tmp" 
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP22D.tmp" with contents
+[
+Win32_LIB_ASM_Debug\libpngd.lib ..\..\..\zlib\projects\visualc6\Win32_LIB_ASM_Debug\zlibd.lib /nologo /subsystem:console /incremental:yes /pdb:"Win32_LIB_ASM_Debug/pngtest.pdb" /debug /machine:I386 /out:"Win32_LIB_ASM_Debug/pngtest.exe" /pdbtype:sept 
+".\Win32_LIB_ASM_Debug\pngtest.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP22D.tmp"
+<h3>Output Window</h3>
+Compiling...
+pngtest.c
+d:\rexyeforapp\branches\20060410-wichang-browser\application\lpng129\pngtest.c(300) : error C2085: 'check' : not in formal parameter list
+d:\rexyeforapp\branches\20060410-wichang-browser\application\lpng129\pngtest.c(305) : error C2061: syntax error : identifier 'check'
+d:\rexyeforapp\branches\20060410-wichang-browser\application\lpng129\pngtest.c(307) : error C2059: syntax error : 'if'
+d:\rexyeforapp\branches\20060410-wichang-browser\application\lpng129\pngtest.c(310) : fatal error C1506: unrecoverable block scoping error
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+pngtest.exe - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

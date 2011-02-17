@@ -1,0 +1,5 @@
+ y.res
+ 
+ Data.Load.elf D:\Mywork\Tigga\Yosemite\Bootloader\usbmon\u241mon.axf /nocode /noclear
+ 
+; Data.Load.elf D:\Mywork\Tigga\Yosemite\Bootloader\usbmon_loader\2410loader.axf 0x0 /nocode /noclear

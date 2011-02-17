@@ -1,0 +1,119 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "addin"=.\addin.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "application"=.\application.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name addin
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name control
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name logic
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name resource_data
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "control"=.\control.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "core"=.\core.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "emulator"=.\emulator\emulator.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name application
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "logic"=.\logic.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "resource_data"=.\resource_data.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

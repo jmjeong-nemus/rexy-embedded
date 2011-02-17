@@ -1,0 +1,70 @@
+; Installation inf for the SEC SOC USB Bulk IO Test B/D
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%ProviderName%
+DriverVer=08/05/1999
+
+[SourceDisksNames]
+1="USB Downloader Installation Disk for SEC SOC",,,
+
+[SourceDisksFiles]
+SECBULK.sys = 1
+SECBULK.inf = 1
+
+[Manufacturer]
+%MfgName%=SystemLsi
+
+[SystemLsi]
+%USB\VID_5345&PID_1234.DeviceDesc%=SECBULK.Dev, USB\VID_5345&PID_1234
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+SECBULK.Files.Ext = 10,System32\Drivers
+SECBULK.Files.Inf = 10,INF
+
+[SECBULK.Dev]
+CopyFiles=SECBULK.Files.Ext, SECBULK.Files.Inf
+AddReg=SECBULK.AddReg
+
+[SECBULK.Dev.NT]
+CopyFiles=SECBULK.Files.Ext, SECBULK.Files.Inf
+AddReg=SECBULK.AddReg
+
+[SECBULK.Dev.NT.Services]
+Addservice = SECBULK, 0x00000002, SECBULK.AddService
+
+[SECBULK.AddService]
+DisplayName    = %SECBULK.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\SECBULK.sys
+LoadOrderGroup = Base
+
+[SECBULK.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,SECBULK.sys
+HKLM,"System\Currentcontrolset\Services\SecBulk\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\SecBulk\Parameters","DebugLevel",0x10001,2
+
+
+[SECBULK.Files.Ext]
+SECBULK.sys
+
+[SECBULK.Files.Inf]
+SECBULK.Inf
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+ProviderName="purnnamu"
+MfgName="SEC, SYSTEM LSI"
+USB\VID_5345&PID_1234.DeviceDesc="SEC SOC Test Board"
+SECBULK.SvcDesc="SECBULK.sys, SEC SOC USBD Driver"
+

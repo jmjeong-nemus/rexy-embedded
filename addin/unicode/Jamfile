@@ -1,0 +1,11 @@
+SubDir TOP addin unicode ;
+
+SubDirHdrs $(TOP) core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) resource ;
+SubDirHdrs $(TOP) control header ;
+SubDirHdrs $(TOP) application ;
+SubDirHdrs $(TOP) addin rexyDB ;
+
+Library addin : rexy_unicode.c ;

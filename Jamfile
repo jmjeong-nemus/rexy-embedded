@@ -1,0 +1,56 @@
+SubDir TOP ;
+
+if $(NT) { HAL_TARGET = "vc60" ; }
+else if $(UNIX) { HAL_TARGET = "linux" ; }
+
+if $(HAL_TARGET) = "vc60" {
+
+	DIR_DELIMITER = \\ ;
+
+	CCFLAGS = /GZ /MLd /W3 /GX /Od ;
+	LINKFLAGS = /subsystem:windows /machine:I386 /nodefaultlib:\"LIBC.LIB\" /nodefaultlib:\"msvcrtd.lib\" ;
+	LINKFLAGS = $(LINKFLAGS) /pdbtype:sept /libpath:"./Lib/MGL/windows" /debug ;
+
+	LINKLIBS = kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ;
+	LINKLIBS = $(LINKLIBS) mgl_ani.lib mgl_core.lib mgl_imageselector.lib mgl_ip.lib mgl_itemmanager.lib mgl_keyframe.lib mgl_particle.lib mgl_particlepile.lib ;
+	LINKLIBS = $(LINKLIBS) lib/lpng/projects/visualc6/Win32_LIB_ASM_Debug/libpngd.lib ;
+	LINKLIBS = $(LINKLIBS) lib/libjpeg/project/vc60/Debug/libjpeg.lib ;
+	LINKLIBS = $(LINKLIBS) lib/libungif/project/vc60/Release/libungif.lib ;
+	LINKLIBS = $(LINKLIBS) lib/zlib/projects/visualc6/Debug/zlib1.lib ;
+
+	DEFINES =  _WINDOWS __SOFT_DEBUG__ WIN32 _DEBUG _MBCS ;
+
+}
+else if $(HAL_TARGET) = "linux" {
+	DIR_DELIMITER = "/" ;
+	LINKFLAGS = `pkg-config gtk+-2.0 gthread-2.0 --libs` -g ;
+	LINKLIBS = ./hal/linux/lib/logic.a ./hal/linux/lib/core.a ;
+	DEFINES = _LINUX ;
+}
+
+##=======================================================
+HAL_DIR = $(TOP)$(DIR_DELIMITER)hal$(DIR_DELIMITER)$(HAL_TARGET) ;
+LOGIC_DIR = $(TOP)/logic ;
+ALL_LOCATE_TARGET = $(HAL_DIR)$(DIR_DELIMITER)lib ; 
+
+
+if $(HAL_TARGET) = "vc60" {
+	LinkLibraries rexye : logic core test application resource control addin ;
+}
+else if $(HAL_TARGET) = "linux" {
+	LinkLibraries rexye : logic core application resource control ;
+}
+
+
+SubInclude TOP logic ;
+SubInclude TOP hal ;
+SubInclude TOP core ;
+SubInclude TOP application ;
+SubInclude TOP resource ;
+SubInclude TOP control ;
+
+if $(HAL_TARGET) = "vc60" {
+	SubInclude TOP test ;
+	SubInclude TOP addin ;
+}
+

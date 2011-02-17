@@ -1,0 +1,26 @@
+include(rexy_hal.m4)dnl
+copyright
+doxygen_start(`halifc Hal Interface',`These APIs are associated with Hal Interface',`HalGroup')
+
+dnl header files
+#include "rexy.h"
+#include "rexy_haldevice.h"
+USE_SCREEN_WIDTH
+USE_SCREEN_HEIGHT
+USE_SCREEN_BUFFER
+USE_SCREEN_MEMSIZE
+USE_TIME_GETCURRENT
+USE_TIME_GETTICKS
+USE_TIME_SETTIMER
+USE_TIME_KILLTIMER
+USE_EVENT_GET
+USE_HOSTTODEV
+USE_DEVTOHOST
+USE_SCREEN_FLUSH
+USE_SCREEN_FLUSHPART
+USE_LOCK_INIT
+USE_LOCK_LOCK
+USE_LOCK_UNLOCK
+USE_SYSTEMFEATURE
+dnl
+doxygen_end

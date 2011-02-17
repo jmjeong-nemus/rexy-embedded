@@ -1,0 +1,3 @@
+SubDir TOP hal ;
+
+SubInclude TOP hal $(HAL_TARGET) ;

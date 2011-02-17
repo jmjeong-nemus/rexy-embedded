@@ -1,0 +1,16 @@
+;	pdal : dal.axf
+;	psys : system.axf
+;	psys : uiappshell.axf
+;	puil : ui.acf
+;	a68k : emul68k.axf
+
+;d.load.elf .\..\PalmOS545SMDK\ROM\AXF\ARM_4T\Release\ARM\System.axf
+ d.load.elf D:\tigga\src\trunk\PalmOS540SMDK\ROM\AXF\ARM_4T\Release\ARM\System.axf  0x20047F00 /nocode /noclear
+ d.load.elf D:\tigga\src\trunk\PalmOS540SMDK\ROM\AXF\ARM_4T\Release\ARM\UI.axf  0x200E2840 /nocode /noclear
+ d.load.elf D:\tigga\src\trunk\PalmOS540SMDK\ROM\AXF\ARM_4T\Release\ARM\UIAppShell.axf 0x20230DE0 /nocode /noclear
+ d.load.elf D:\tigga\src\trunk\PalmOS540SMDK\ROM\AXF\ARM_4T\Release\ARM\Emul68K.axf 0x2010A3A0  /nocode /noclear
+
+y.spath "D:\galaxy_project\source_backup\PALM_5_2_SRC\TotalRecall\ARM\Core\System\Src"
+y.spath "D:\galaxy_project\source_backup\PALM_5_2_SRC\TotalRecall\ARM\Core\UI\Src"
+y.spath "D:\galaxy_project\source_backup\PALM_5_2_SRC\TotalRecall\ARM\Apps\UIAppShell\Src"
+y.spath "D:\galaxy_project\source_backup\PALM_5_2_SRC\TotalRecall\ARM\Core\DAL\Kernel\MCK\SrcGlue"

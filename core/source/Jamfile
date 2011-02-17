@@ -1,0 +1,8 @@
+SubDir TOP core source ;
+
+SubDirHdrs core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+
+
+Library core : rexy_diag.c rexy_feature.c rexy_font.c rexy_gdi.c rexy_io.c rexy_lock.c rexy_mem.c rexy_msg.c rexy_msgq.c rexy_resource.c rexy_string.c rexy_trace.c rexy_user.c rexy_util.c rexy_win.c rexy_winalloc.c ;

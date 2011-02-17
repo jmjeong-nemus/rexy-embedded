@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: zlib - Win32 LIB ASM Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP136.bat" with contents
+[
+@echo off
+ml.exe /nologo /c /coff /Cx /Zi /Fo".\Debug\inffas32.obj" "..\..\contrib\masmx86\inffas32.asm"
+]
+Creating command line "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP136.bat"
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP137.bat" with contents
+[
+@echo off
+ml.exe /nologo /c /coff /Cx /Zi /Fo".\Debug\gvmat32.obj" "..\..\contrib\masmx86\gvmat32.asm"
+]
+Creating command line "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP137.bat"
+Creating command line "rc.exe /l 0x409 /fo"Debug/zlib1.res" /i "\trunk\addin\zlib\win32" /d "_DEBUG" "D:\trunk\addin\zlib\win32\zlib1.rc"" 
+Assembling...
+ Assembling: ..\..\contrib\masmx86\inffas32.asm
+Assembling...
+ Assembling: ..\..\contrib\masmx86\gvmat32.asm
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP138.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /ZI /Od /D "WIN32" /D "_DEBUG" /D "ASMV" /D "ASMINF" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\trunk\addin\zlib\adler32.c"
+"D:\trunk\addin\zlib\compress.c"
+"D:\trunk\addin\zlib\crc32.c"
+"D:\trunk\addin\zlib\deflate.c"
+"D:\trunk\addin\zlib\gzio.c"
+"D:\trunk\addin\zlib\infback.c"
+"D:\trunk\addin\zlib\inffast.c"
+"D:\trunk\addin\zlib\inflate.c"
+"D:\trunk\addin\zlib\inftrees.c"
+"D:\trunk\addin\zlib\trees.c"
+"D:\trunk\addin\zlib\uncompr.c"
+"D:\trunk\addin\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP138.tmp" 
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP139.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /ZI /Od /I "..\.." /D "WIN32" /D "_DEBUG" /D "ASMV" /D "ASMINF" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\trunk\addin\zlib\contrib\masmx86\gvmat32c.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP139.tmp" 
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP13A.tmp" with contents
+[
+/nologo /out:"Win32_LIB_ASM_Debug\zlibd.lib" 
+.\Debug\adler32.obj
+.\Debug\compress.obj
+.\Debug\crc32.obj
+.\Debug\deflate.obj
+.\Debug\gzio.obj
+.\Debug\infback.obj
+.\Debug\inffast.obj
+.\Debug\inflate.obj
+.\Debug\inftrees.obj
+.\Debug\trees.obj
+.\Debug\uncompr.obj
+.\Debug\zutil.obj
+.\Debug\gvmat32c.obj
+.\Debug\zlib1.res
+.\Debug\gvmat32.obj
+.\Debug\inffas32.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP13A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+trees.c
+uncompr.c
+zutil.c
+Generating Code...
+Compiling...
+gvmat32c.c
+Creating library...
+
+
+
+<h3>Results</h3>
+zlibd.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

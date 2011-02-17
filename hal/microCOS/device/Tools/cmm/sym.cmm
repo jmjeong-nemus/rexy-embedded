@@ -1,0 +1,12 @@
+ y.res
+ 
+; do spk_sym
+;do palm_sym
+do uCOS-ii_spk_sym
+ 
+; y.m.addr gDALGlobals 0x1FF0061c
+ 
+; y.new.macro gKrnGlobals (*((struct kernelGlobals*)(gDALGlobals->krnGlobals)))
+; y.new.macro gHalGlobals (*((HALGlobalsType*)(gDALGlobals->HALGlobals)))
+
+; y.m.addr GPalmOSGlobals 0x1FF04E54

@@ -1,0 +1,3 @@
+-pd "ENDIAN_CHANGE SETL {FALSE}" -li -apcs /noswst -pd "ADS SETL {TRUE}"
+-pd "__BIG_ENDIAN SETL {FALSE}"  -I..\inc -I..\..\source -I..\..\arm_ucos\common\inc
+-I..\..\arm_ucos\S3c2410a\inc -cpu ARM920T -Errors .\init.err

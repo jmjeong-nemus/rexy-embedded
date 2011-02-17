@@ -1,0 +1,5 @@
+SubDir TOP test ;
+
+if $(HAL_TARGET) = "vc60" {
+	SubInclude TOP test source ;
+}

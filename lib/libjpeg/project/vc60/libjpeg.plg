@@ -1,0 +1,273 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libjpeg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP13F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/libjpeg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\trunk\addin\libjpeg\ansi2knr.c"
+"D:\trunk\addin\libjpeg\cdjpeg.c"
+"D:\trunk\addin\libjpeg\cjpeg.c"
+"D:\trunk\addin\libjpeg\ckconfig.c"
+"D:\trunk\addin\libjpeg\djpeg.c"
+"D:\trunk\addin\libjpeg\example.c"
+"D:\trunk\addin\libjpeg\jcapimin.c"
+"D:\trunk\addin\libjpeg\jcapistd.c"
+"D:\trunk\addin\libjpeg\jccoefct.c"
+"D:\trunk\addin\libjpeg\jccolor.c"
+"D:\trunk\addin\libjpeg\jcdctmgr.c"
+"D:\trunk\addin\libjpeg\jchuff.c"
+"D:\trunk\addin\libjpeg\jcinit.c"
+"D:\trunk\addin\libjpeg\jcmainct.c"
+"D:\trunk\addin\libjpeg\jcmarker.c"
+"D:\trunk\addin\libjpeg\jcmaster.c"
+"D:\trunk\addin\libjpeg\jcomapi.c"
+"D:\trunk\addin\libjpeg\jcparam.c"
+"D:\trunk\addin\libjpeg\jcphuff.c"
+"D:\trunk\addin\libjpeg\jcprepct.c"
+"D:\trunk\addin\libjpeg\jcsample.c"
+"D:\trunk\addin\libjpeg\jctrans.c"
+"D:\trunk\addin\libjpeg\jdapimin.c"
+"D:\trunk\addin\libjpeg\jdapistd.c"
+"D:\trunk\addin\libjpeg\jdatadst.c"
+"D:\trunk\addin\libjpeg\jdatasrc.c"
+"D:\trunk\addin\libjpeg\jdcoefct.c"
+"D:\trunk\addin\libjpeg\jdcolor.c"
+"D:\trunk\addin\libjpeg\jddctmgr.c"
+"D:\trunk\addin\libjpeg\jdhuff.c"
+"D:\trunk\addin\libjpeg\jdinput.c"
+"D:\trunk\addin\libjpeg\jdmainct.c"
+"D:\trunk\addin\libjpeg\jdmarker.c"
+"D:\trunk\addin\libjpeg\jdmaster.c"
+"D:\trunk\addin\libjpeg\jdmerge.c"
+"D:\trunk\addin\libjpeg\jdphuff.c"
+"D:\trunk\addin\libjpeg\jdpostct.c"
+"D:\trunk\addin\libjpeg\jdsample.c"
+"D:\trunk\addin\libjpeg\jdtrans.c"
+"D:\trunk\addin\libjpeg\jerror.c"
+"D:\trunk\addin\libjpeg\jfdctflt.c"
+"D:\trunk\addin\libjpeg\jfdctfst.c"
+"D:\trunk\addin\libjpeg\jfdctint.c"
+"D:\trunk\addin\libjpeg\jidctflt.c"
+"D:\trunk\addin\libjpeg\jidctfst.c"
+"D:\trunk\addin\libjpeg\jidctint.c"
+"D:\trunk\addin\libjpeg\jidctred.c"
+"D:\trunk\addin\libjpeg\jmemansi.c"
+"D:\trunk\addin\libjpeg\jmemmgr.c"
+"D:\trunk\addin\libjpeg\jmemname.c"
+"D:\trunk\addin\libjpeg\jmemnobs.c"
+"D:\trunk\addin\libjpeg\jpegtran.c"
+"D:\trunk\addin\libjpeg\jquant1.c"
+"D:\trunk\addin\libjpeg\jquant2.c"
+"D:\trunk\addin\libjpeg\jutils.c"
+"D:\trunk\addin\libjpeg\rdbmp.c"
+"D:\trunk\addin\libjpeg\rdcolmap.c"
+"D:\trunk\addin\libjpeg\rdgif.c"
+"D:\trunk\addin\libjpeg\rdjpgcom.c"
+"D:\trunk\addin\libjpeg\rdppm.c"
+"D:\trunk\addin\libjpeg\rdrle.c"
+"D:\trunk\addin\libjpeg\rdswitch.c"
+"D:\trunk\addin\libjpeg\rdtarga.c"
+"D:\trunk\addin\libjpeg\transupp.c"
+"D:\trunk\addin\libjpeg\wrbmp.c"
+"D:\trunk\addin\libjpeg\wrgif.c"
+"D:\trunk\addin\libjpeg\wrjpgcom.c"
+"D:\trunk\addin\libjpeg\wrppm.c"
+"D:\trunk\addin\libjpeg\wrrle.c"
+"D:\trunk\addin\libjpeg\wrtarga.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP13F.tmp" 
+Creating temporary file "C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+/nologo /out:"Debug\libjpeg.lib" 
+.\Debug\ansi2knr.obj
+.\Debug\cdjpeg.obj
+.\Debug\cjpeg.obj
+.\Debug\ckconfig.obj
+.\Debug\djpeg.obj
+.\Debug\example.obj
+.\Debug\jcapimin.obj
+.\Debug\jcapistd.obj
+.\Debug\jccoefct.obj
+.\Debug\jccolor.obj
+.\Debug\jcdctmgr.obj
+.\Debug\jchuff.obj
+.\Debug\jcinit.obj
+.\Debug\jcmainct.obj
+.\Debug\jcmarker.obj
+.\Debug\jcmaster.obj
+.\Debug\jcomapi.obj
+.\Debug\jcparam.obj
+.\Debug\jcphuff.obj
+.\Debug\jcprepct.obj
+.\Debug\jcsample.obj
+.\Debug\jctrans.obj
+.\Debug\jdapimin.obj
+.\Debug\jdapistd.obj
+.\Debug\jdatadst.obj
+.\Debug\jdatasrc.obj
+.\Debug\jdcoefct.obj
+.\Debug\jdcolor.obj
+.\Debug\jddctmgr.obj
+.\Debug\jdhuff.obj
+.\Debug\jdinput.obj
+.\Debug\jdmainct.obj
+.\Debug\jdmarker.obj
+.\Debug\jdmaster.obj
+.\Debug\jdmerge.obj
+.\Debug\jdphuff.obj
+.\Debug\jdpostct.obj
+.\Debug\jdsample.obj
+.\Debug\jdtrans.obj
+.\Debug\jerror.obj
+.\Debug\jfdctflt.obj
+.\Debug\jfdctfst.obj
+.\Debug\jfdctint.obj
+.\Debug\jidctflt.obj
+.\Debug\jidctfst.obj
+.\Debug\jidctint.obj
+.\Debug\jidctred.obj
+.\Debug\jmemansi.obj
+.\Debug\jmemmgr.obj
+.\Debug\jmemname.obj
+.\Debug\jmemnobs.obj
+.\Debug\jpegtran.obj
+.\Debug\jquant1.obj
+.\Debug\jquant2.obj
+.\Debug\jutils.obj
+.\Debug\rdbmp.obj
+.\Debug\rdcolmap.obj
+.\Debug\rdgif.obj
+.\Debug\rdjpgcom.obj
+.\Debug\rdppm.obj
+.\Debug\rdrle.obj
+.\Debug\rdswitch.obj
+.\Debug\rdtarga.obj
+.\Debug\transupp.obj
+.\Debug\wrbmp.obj
+.\Debug\wrgif.obj
+.\Debug\wrjpgcom.obj
+.\Debug\wrppm.obj
+.\Debug\wrrle.obj
+.\Debug\wrtarga.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\WIJ\LOCALS~1\Temp\RSP140.tmp"
+<h3>Output Window</h3>
+Compiling...
+ansi2knr.c
+d:\trunk\addin\libjpeg\ansi2knr.c(346) : warning C4013: 'exit' undefined; assuming extern returning int
+d:\trunk\addin\libjpeg\ansi2knr.c(518) : warning C4018: '==' : signed/unsigned mismatch
+cdjpeg.c
+cjpeg.c
+d:\trunk\addin\libjpeg\cjpeg.c(194) : warning C4013: 'exit' undefined; assuming extern returning int
+ckconfig.c
+djpeg.c
+d:\trunk\addin\libjpeg\djpeg.c(157) : warning C4013: 'exit' undefined; assuming extern returning int
+example.c
+d:\trunk\addin\libjpeg\example.c(116) : warning C4013: 'exit' undefined; assuming extern returning int
+d:\trunk\addin\libjpeg\example.c(379) : warning C4013: 'put_scanline_someplace' undefined; assuming extern returning int
+jcapimin.c
+jcapistd.c
+jccoefct.c
+jccolor.c
+jcdctmgr.c
+jchuff.c
+jcinit.c
+jcmainct.c
+jcmarker.c
+jcmaster.c
+jcomapi.c
+jcparam.c
+jcphuff.c
+jcprepct.c
+jcsample.c
+jctrans.c
+jdapimin.c
+jdapistd.c
+jdatadst.c
+jdatasrc.c
+jdcoefct.c
+jdcolor.c
+jddctmgr.c
+jdhuff.c
+jdinput.c
+jdmainct.c
+jdmarker.c
+jdmaster.c
+jdmerge.c
+jdphuff.c
+jdpostct.c
+jdsample.c
+jdtrans.c
+jerror.c
+d:\trunk\addin\libjpeg\jerror.c(78) : warning C4013: 'exit' undefined; assuming extern returning int
+jfdctflt.c
+jfdctfst.c
+jfdctint.c
+jidctflt.c
+jidctfst.c
+jidctint.c
+jidctred.c
+jmemansi.c
+jmemmgr.c
+jmemname.c
+d:\trunk\addin\libjpeg\jmemname.c(130) : warning C4013: 'mktemp' undefined; assuming extern returning int
+jmemnobs.c
+jpegtran.c
+d:\trunk\addin\libjpeg\jpegtran.c(86) : warning C4013: 'exit' undefined; assuming extern returning int
+jquant1.c
+jquant2.c
+jutils.c
+rdbmp.c
+rdcolmap.c
+rdgif.c
+D:\trunk\addin\libjpeg\rdgif.c(34) : warning C4013: 'exit' undefined; assuming extern returning int
+rdjpgcom.c
+d:\trunk\addin\libjpeg\rdjpgcom.c(79) : warning C4013: 'exit' undefined; assuming extern returning int
+rdppm.c
+rdrle.c
+rdswitch.c
+rdtarga.c
+transupp.c
+wrbmp.c
+wrgif.c
+wrjpgcom.c
+d:\trunk\addin\libjpeg\wrjpgcom.c(98) : warning C4013: 'exit' undefined; assuming extern returning int
+wrppm.c
+wrrle.c
+wrtarga.c
+Creating library...
+rdjpgcom.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+jpegtran.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_get_small already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_free_small already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_get_large already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_free_large already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_mem_available already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_open_backing_store already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_mem_init already defined in jmemnobs.obj; second definition ignored
+jmemname.obj : warning LNK4006: _jpeg_mem_term already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_get_small already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_free_small already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_get_large already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_free_large already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_mem_available already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_open_backing_store already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_mem_init already defined in jmemnobs.obj; second definition ignored
+jmemansi.obj : warning LNK4006: _jpeg_mem_term already defined in jmemnobs.obj; second definition ignored
+djpeg.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+ckconfig.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+cjpeg.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+ansi2knr.obj : warning LNK4006: _main already defined in wrjpgcom.obj; second definition ignored
+
+
+
+<h3>Results</h3>
+libjpeg.lib - 0 error(s), 34 warning(s)
+</pre>
+</body>
+</html>

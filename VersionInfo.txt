@@ -1,0 +1,37 @@
+Version 1.6.0
+Release date : 22-Sep-2006
+
+Copyright(c) Mococo
+
+
+[ History Log ]
+1.6.0	- Re-structured using window base
+	- Event dispatch procedure has been improved ( support 1 depth child window )
+	- Some built-in controls have been embedded and updated ( edit / animation bitmap / list / popup / sliding text )
+	- Powerful trace feature added
+	- Memory leak checker has been implemented
+	- Project structure ( HAL ) modified
+
+1.5.0	- Project Structure has been changed
+	  ( resource_data, add-in projects added )
+	- Library dependencies eliminated
+	- RscSetFont(), RscSetBitmapGroup(), StaSetEventHandler() added
+	- Several functions was added for attribute setting (text alignment, text spacing, text font style, text extent)
+	- The function that process string was integrated to the GdiTextOut() and GdiTextOutW(), but old textout functions is lefted.
+	- rexy_dbcs file was added for supporting unicode
+	- Added 'AppInit' interface
+	- Moved rexy_ctl_core to Control from Logic.
+	- Added 'addin' project	
+	- Sample application " Biorhythm " has been added
+
+1.4.0	- Added WinGetCurrentWindow. The current window will be set at every calling MsgSendMessage.
+	  This point will be good because every message handler is called by MsgSendMessage.
+	- Event handling related timer enhanced
+	- Linux HAL updated
+	- GdiTextOut() APIs updated to support negative coordination
+	- GdiWinSaveBits(), GdiWinRestoreBits() enhanced supporting clip area
+	- GdiGetScreenPtr() function added
+
+1.3.0	- Windows/PPC simulator lcd driver bug fix
+1.2.0	- Timer Upgraded
+1.1.0	- MGL ported

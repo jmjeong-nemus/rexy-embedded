@@ -1,0 +1,15 @@
+#!/bin/sh
+
+DEBUG_OPTION="-g"
+#DEBUG_OPTION=""
+
+CC="gcc"
+LFLAGS="$(DEBUG_OPTION) -L../lib -L../../../lib/mgl/linux -lpthread"
+
+export CC
+export DEBUG_OPTION
+export LFLAGS
+
+make
+
+

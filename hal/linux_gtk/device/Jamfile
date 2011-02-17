@@ -1,0 +1,11 @@
+SubDir TOP hal linux device ;
+
+SubDirHdrs core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) test header ;
+SubDirHdrs $(TOP) application ;
+SubDirHdrs $(TOP) resource ;
+SubDirCcFlags `pkg-config gtk+-2.0 --cflags` ;
+
+Main rexye : rexy_clib.c rexy_dummy.c rexy_halinterface.c startup.c ;

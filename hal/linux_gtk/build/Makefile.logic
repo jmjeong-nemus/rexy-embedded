@@ -1,0 +1,95 @@
+CFLAGS=  -w -I../../../logic/header -I.. -I../../../resource -I../../../core/header -I../../../control/header -I../../../application
+
+OBJS=	obj/rexy_ctl_core.o \
+	obj/rexy_ctl_callback.o \
+	obj/rexy_ctl_slidetext.o \
+	obj/rexy_ctl_anibmp.o \
+	obj/rexy_ctl_edit.o \
+	obj/rexy_main.o \
+	obj/rexy_mainproc.o \
+	obj/rexy_state.o \
+	obj/rexy_sysmsg.o	
+
+SRCS=   ../../../control/source/rexy_ctl_core.c \
+	../../../control/source/rexy_ctl_callback.c \
+	../../../control/source/rexy_ctl_slidetext.c \
+	../../../control/source/rexy_ctl_anibmp.c \
+	../../../control/source/rexy_ctl_edit.c \
+	../../../logic/source/rexy_main.c \
+	../../../logic/source/rexy_mainproc.c \
+	../../../logic/source/rexy_state.c \
+	../../../logic/source/rexy_sysmsg.c
+
+all: ../lib/liblogic.a
+
+../lib/liblogic.a: $(OBJS)	
+	ar rcs ../lib/liblogic.a $(OBJS)
+
+obj/%.o : ../../../logic/source/%.c
+	gcc -c $(CFLAGS) -o $@ $<
+
+obj/%.o : ../../../control/source/%.c
+	gcc -c $(CFLAGS) -o $@ $<
+
+clean: 
+	rm obj/*
+	rm ../lib/liblogic.a
+
+dep:
+	makedepend -fMakefile.logic $(CFLAGS) $(SRCS)
+
+# DO NOT DELETE
+
+../../../control/source/rexy_ctl_core.o: ../../../control/header/rexy_ctl_list.h
+../../../logic/source/sample_list.o: ../../../logic/header/sample_list.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_error.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_mem.h
+../../../logic/source/sample_list.o: ../rexy_haltype.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_type.h
+../../../logic/source/sample_list.o: ../rexy_halinterface.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_msg.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_lock.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_aniobj.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_win.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_user.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_common.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_gdi.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_trace.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_resource.h
+../../../logic/source/sample_list.o: ../../../resource/rexy_fontdata.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_device.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_const.h
+../../../logic/source/sample_list.o: ../rexy_clib.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_winalloc.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_msgq.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_font.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_util.h
+../../../logic/source/sample_list.o: ../../../core/header/rexy_string.h
+../../../logic/source/sample_list.o: ../../../logic/header/rexy_ctl_list.h
+../../../logic/source/sample_pop.o: ../../../logic/header/sample_pop.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_error.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_mem.h
+../../../logic/source/sample_pop.o: ../rexy_haltype.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_type.h
+../../../logic/source/sample_pop.o: ../rexy_halinterface.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_msg.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_lock.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_aniobj.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_win.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_user.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_common.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_gdi.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_trace.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_resource.h
+../../../logic/source/sample_pop.o: ../../../resource/rexy_fontdata.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_device.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_const.h
+../../../logic/source/sample_pop.o: ../rexy_clib.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_winalloc.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_msgq.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_font.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_util.h
+../../../logic/source/sample_pop.o: ../../../core/header/rexy_string.h
+../../../logic/source/sample_pop.o: ../../../logic/header/rexy_ctl_popup.h

@@ -1,0 +1,10 @@
+SubDir TOP application control_demo source ;
+
+SubDirHdrs $(TOP) core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) resource ;
+SubDirHdrs $(TOP) control header ;
+SubDirHdrs $(TOP) application ;
+
+Library application : sample_anibmp.c sample_control.c sample_edit.c sample_list.c sample_popup.c sample_slidetext.c ;

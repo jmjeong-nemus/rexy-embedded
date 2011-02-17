@@ -1,0 +1,25 @@
+안녕하세요 MDS 기술지원팀입니다.
+
+TRST 라인이 혹시 Systerm RESET 라인과 연결(short)되어 있지않나요?
+
+Attach 기능은 Tap Controller 를 RESET 시키기 위해 TRST라인으로 low 시그널을 보내어 줍니다. 이때 만약 Target 의 System Reset 과 연결되어 있다면 시스템도 Reset 되어 버리겠죠?
+
+JTAG 핀을 보시면 TRST는 칩의 TRST 핀에 칩에 없다면 open 하시구요...
+JTAG 핀의 SRST 핀은 Target 보드의 System Reset 에 연결하셔야 합니다.
+
+감사합니다.
+
+=== 원본글 ================
+S3C2410TK보드에 T32를 이용해서 디버깅을 할려고 합니다.
+보드와 디버거를 연결하기 위해서 "sys.mode attach"를 사용했는데
+보드가 리셋이 됩니다. 왜 그런가요?
+"sys.mode attach"를 하면 보드의 레지스터는 보존이 되고 연결이 되는 걸로 알고 있습니다.
+참고로 보드와 연결할때 사용한 명령어 입니다.
+tronchip.set.dabort off
+tronchip.set.reset off
+sys.cpu arm920t
+sys.option.dacr on
+sys.mode attach
+
+그럼 수고하십시오.
+

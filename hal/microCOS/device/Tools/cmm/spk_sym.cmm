@@ -1,0 +1,4 @@
+d.load.elf .\..\palmos540smdk\build\ROM\AXF\Sam_S3C2410\release\arm\160x220\SmallDAL-1X.axf /nocode /noclear
+d.load.elf .\..\palmos540smdk\build\ROM\AXF\Sam_S3C2410\release\arm\160x220\DAL.axf 0x200A99C0 /nocode /noclear
+d.load.elf .\..\palmos540smdk\build\ROM\AXF\Sam_S3C2410\release\arm\160x220\2410SerialDriver.axf 0x201D6920 /nocode /noclear
+d.load.elf .\..\palmos540smdk\build\ROM\AXF\Sam_S3C2410\release\arm\160x220\2410USBDriver.axf 0x201D8BC0 /nocode /noclear

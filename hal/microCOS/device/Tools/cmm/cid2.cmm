@@ -1,0 +1,19 @@
+wclear
+
+area.create log 80. 400.
+area.select log
+area log
+
+area.open log log.txt
+
+b.res
+
+
+b.set \\DAL\RuntimeARM\RALLoadModule+0x24 /program /spot /onchip
+d.l \\DAL\RuntimeARM\RALLoadModule+0x24
+
+y.new.macro CREATORID ((RALCodeHeaderType *)(iCodeDescriptor->code1))->libCreator
+;y.new.macro DATA0 ((RALCodeDescriptorType*)(iCodeDescriptor->data0))
+var.log %ascii CREATORID %hex codeP /area log /onspot /changes
+
+

@@ -1,0 +1,101 @@
+[Global]
+CurrentProject=emulator/emulator.vpj
+[ProjectDates]
+application/application.vpj=20060216153518000
+control/control.vpj=20060202115442000
+core/core.vpj=20060202115444000
+emulator/emulator.vpj=20060202115444000
+logic/logic.vpj=20060202115444000
+[ActiveConfig]
+RexyE_SE.vpj=,Debug
+application/application.vpj=,Debug
+logic/logic.vpj=,Debug
+core/core.vpj=,Debug
+emulator/emulator.vpj=,Debug
+control/control.vpj=,Debug
+[TreeExpansion2]
+- application/application.vpj
+  - control demo
+  - title
+  - mgl
+    - layer
++ control/control.vpj
++ core/core.vpj
++ emulator/emulator.vpj
+- logic/logic.vpj
+  - Source Files
+  + Header Files
+scroll:0
+[State]
+SCREEN: 1400 1050 0 0 1400 1003 0 0 N 0 0 0 0 1396 663
+CWD: ../build
+BUFFER: BN="../../../core/source/rexy_trace.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.7799 CL=16 LE=0 CX=16 CY=28 WI=5 BI=26 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../../../core/source/rexy_user.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.11169 CL=77 LE=0 CX=77 CY=29 WI=5 BI=31 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../../../core/source/rexy_msg.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.2879 CL=35 LE=0 CX=35 CY=27 WI=5 BI=8 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../../../logic/source/rexy_main.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1714 CL=1 LE=0 CX=1 CY=24 WI=5 BI=30 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../device/rexy_halinterface.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.1400 CL=1 LE=0 CX=1 CY=24 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../device/startup.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.410 CL=1 LE=0 CX=1 CY=16 WI=5 BI=27 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../rexy_halinterface.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.854 CL=2 LE=0 CX=2 CY=29 WI=5 BI=32 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../device/rexy_clib.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=872 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.6782 CL=40 LE=0 CX=40 CY=24 WI=5 BI=29 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="../../../core/header/rexy_user.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=1 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=616 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.971 CL=53 LE=0 CX=53 CY=22 WI=5 BI=9 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 724 447 0 0 N  WF=0 WT=12 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../../../core/source/rexy_user.c"
+VIEW: LN=.11169 CL=77 LE=0 CX=77 CY=29 WI=117 BI=31 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 942 447 0 0 N  WF=0 WT=3 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../../../core/source/rexy_trace.c"
+VIEW: LN=.7799 CL=16 LE=0 CX=16 CY=28 WI=362 BI=26 HT=0 HN=0 HF=0 HC=4
+WINDOW: 175 175 942 447 0 0 N  WF=0 WT=1 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../../../core/header/rexy_user.h"
+VIEW: LN=.971 CL=53 LE=0 CX=53 CY=22 WI=310 BI=9 HT=0 HN=0 HF=0 HC=4
+WINDOW: 25 25 724 447 0 0 N  WF=0 WT=13 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../device/rexy_halinterface.c"
+VIEW: LN=.1400 CL=1 LE=0 CX=1 CY=24 WI=151 BI=22 HT=0 HN=0 HF=0 HC=4
+WINDOW: 25 25 942 447 0 0 N  WF=0 WT=4 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../device/rexy_clib.c"
+VIEW: LN=.6782 CL=40 LE=0 CX=41 CY=24 WI=364 BI=29 HT=0 HN=0 HF=0 HC=4
+WINDOW: 200 200 942 447 0 0 N  WF=0 WT=2 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../../../core/source/rexy_msg.c"
+VIEW: LN=.2879 CL=35 LE=0 CX=35 CY=27 WI=312 BI=8 HT=0 HN=0 HF=0 HC=4
+WINDOW: 50 50 942 447 0 0 N  WF=0 WT=5 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../../../logic/source/rexy_main.c"
+VIEW: LN=.1714 CL=1 LE=0 CX=1 CY=24 WI=230 BI=30 HT=0 HN=0 HF=0 HC=4
+WINDOW: 50 50 724 447 0 0 N  WF=0 WT=14 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../rexy_halinterface.h"
+VIEW: LN=.823 CL=1 LE=0 CX=1 CY=28 WI=139 BI=32 HT=0 HN=0 HF=0 HC=4
+WINDOW: 100 100 641 427 0 0 M  WF=0 WT=8 "ANSI Fixed Font,12,0,1"
+BUFFER: BN="../device/startup.c"
+VIEW: LN=.410 CL=1 LE=0 CX=1 CY=16 WI=134 BI=27 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+/usr/include/glib-2.0/glib/gmain.h
+../../../core/header/rexy_user.h
+../../../core/source/rexy_user.c
+../../../core/source/rexy_trace.c
+../device/rexy_clib.c
+../device/rexy_halinterface.c
+../../../core/source/rexy_msg.c
+../../../logic/source/rexy_main.c
+../device/startup.c
+DEBUG: 0 0 0 0 5 0
+printf
+strcpy
+std::*
+########
+########

@@ -1,0 +1,10 @@
+SubDir TOP application browser source ;
+
+SubDirHdrs $(TOP) core header ;
+SubDirHdrs $(TOP) hal $(HAL_TARGET) ;
+SubDirHdrs $(TOP) logic header ;
+SubDirHdrs $(TOP) resource ;
+SubDirHdrs $(TOP) control header ;
+SubDirHdrs $(TOP) application ;
+
+Library application : base64.c build.c control.c file.c functions.c gif.c html.c http.c image.c image_generic.c image_helpers.c jpeg.c layout.c magick.c main.c parser_helpers.c pngs.c protocol_generic.c retrieve.c rexy_browser.c settings.c states.c string.c table.c tags.c text.c threads.c ui_close.c ui_helpers.c ui_image.c ui_init.c ui_line.c ui_main.c ui_open.c ui_render.c ui_table.c ui_text.c ui_title.c util.c ;

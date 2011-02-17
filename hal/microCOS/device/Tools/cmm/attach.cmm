@@ -1,0 +1,5 @@
+printer.filetype ascii
+printer.open source.txt
+wp.per
+wp.r
+printer.close 

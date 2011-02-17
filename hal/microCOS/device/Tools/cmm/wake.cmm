@@ -1,0 +1,6 @@
+do init
+do sym
+Break
+r.s r0 0
+go
+
